@@ -1,0 +1,383 @@
+@import url(font-awesome.min.css);
+@import "http://fonts.googleapis.com/css?family=Raleway";
+
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: rgba(0, 0, 0, 1);
+	overflow: hidden;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+	
+	.slider {
+		display: none !important;
+	}
+	
+	#overlay {
+		display: none !important;
+	}
+	
+	#container {
+		max-width: 100%;
+	}
+	
+	#contactForm {
+		display: none;
+		opacity: 0;
+		width: 100% !important;
+		overflow-x: hidden;
+		overflow-y: auto;
+		border-radius: 0px !important;
+		border: none !important;
+    	max-height: 100%;
+    }
+	
+	#div_name, #div_email, #div_phone, #div_newsletter, #div_privacy {
+		max-width: 97% !important;
+		width: 97% !important;
+		margin-top: 2% !important;
+    }
+	
+	#div_textarea {
+		width: 97% !important;
+	}
+	
+	textarea {
+		width: 94% !important;
+	}
+	
+	#img_close_div_contact {
+	  top: 10px !important;
+	  right: 7px !important;
+	  cursor: pointer;
+	  z-index: 1;
+	}
+	
+	input[type="text"], input[type="email"] {
+	  height: 2.7em !important;
+	}
+	
+	#btn_submitForm {
+		height: 60px !important;
+	}
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+.slider img {
+	width: 100%;
+	height: 100%;
+}
+
+#div_btnContact {
+    width: 200px;
+    height: 80px;
+	position: relative;
+	left: 50%; 
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 1;
+} 
+
+#btn_contact {
+	width: 100%;
+	height: 100%;
+	line-height: 2.75rem;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.20em;
+  	background-color: rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#btn_contact:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(79, 199, 255, 0.9);
+  transition-duration: 0.60s;
+}
+
+#btn_contact:active {
+  background-color: rgba(255, 255, 255, 0.175);
+}
+
+
+#contactForm {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  width: 450px;
+  max-height: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 1px solid white;
+  overflow-y: auto;
+}
+
+#img_close_div_contact {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#img_close_div_contact:hover {
+  background-color: transparent;
+  width: 43px;
+  height: 43px;
+  transition-duration: 1s;
+}
+
+h1 {
+  font-family: "Raleway";
+  font-style: italic;
+  color: #fff;
+}
+
+input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.075);
+  color: #fff;
+  border: 1px solid white;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  width: 100%;
+  height: 3em;
+  padding-left: 0.45em;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(79, 199, 255, 0.9);
+  transition-duration: 0.40s;
+}
+
+input[type="text"]:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  transition-duration: 0.40s;
+}
+
+input[type="email"] {
+  background-color: rgba(255, 255, 255, 0.075);
+  color: #fff;
+  border: 1px solid white;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  width: 100%;
+  height: 3em;
+  padding-left: 0.45em;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="email"]:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(79, 199, 255, 0.9);
+  transition-duration: 0.40s;
+}
+
+input[type="email"]:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  transition-duration: 0.40s;
+}
+
+label {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 0.90em;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#div_name, #div_email, #div_phone, #div_textarea, #div_newsletter, #div_privacy {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-51%);
+  margin-top: 10px;
+}
+
+#div_name {
+	margin-top: 20px;
+}
+
+#div_buttonSubmit {
+	width: 100%;
+	position: relative;
+}
+
+#btn_submitForm {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 5px;
+    min-width: 7.5rem;
+    height: 3.7rem;
+    line-height: 2.75rem;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.20em;
+}
+
+textarea {
+  padding-top: 15px;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.075);
+  color: #fff;
+  border: 1px solid white;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  width: 95%;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1.05em;
+}
+
+textarea::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+}
+
+textarea:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(79, 199, 255, 0.9);
+  transition-duration: 0.40s;
+}
+
+textarea:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  transition-duration: 0.40s;
+}
+	
+textarea::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+}
+
+#div_privacy {
+	padding-top: 1em;
+}
+
+input[type="checkbox"] + #label_checkNewsletter, input[type="checkbox"] + #label_checkPrivacy {
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+  margin: 0 0 0.5rem 0;
+  padding-left: 3.1rem;
+  padding-right: 0.75rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+input[type="checkbox"] + #label_checkNewsletter:before, input[type="checkbox"] + #label_checkPrivacy:before {
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border-radius: 4px;
+  border: solid 1px #fff;
+  content: '';
+  display: inline-block;
+  height: 2rem;
+  left: 0;
+  padding-top: 6px;
+  padding-left: 6px;
+  position: absolute;
+  text-align: center;
+  width: 2rem;
+  vertical-align: middle;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  margin-top: -11px;
+}
+
+input[type="checkbox"]:checked + #label_checkNewsletter:before, input[type="checkbox"]:checked + #label_checkPrivacy:before {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #000;
+  content: "\f00c";
+}
+
+input[type="checkbox"] {
+  display: block;
+  width: 1rem;
+  float: left;
+  margin-right: -2em;
+  opacity: 0;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.01);
+  -webkit-appearance: none;
+}
+
+
+
+
+#btn_submitForm:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(79, 199, 255, 0.9);
+  transition-duration: 0.60s;
+}
+
+#btn_submitForm:active {
+  background-color: rgba(255, 255, 255, 0.175);
+}

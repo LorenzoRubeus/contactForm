@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.4/sweetalert2.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.4/sweetalert2.min.css" />  
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
+        <link rel="stylesheet" href="css/style.css">
+		<title>Contact Us</title>
+	</head>
+	<body>
+		<div class="container">
+		
+			<div class="slider">
+				<img src="img/slide1.png" class="img_slider">
+				<img src="img/slide2.png" class="img_slider">
+				<img src="img/slide3.png" class="img_slider">
+				<img src="img/slide4.png" class="img_slider">
+			</div>
+			
+			<div id="overlay"></div>
+			
+			<div id="div_btnContact">
+				<button id="btn_contact">
+					CONTACT US
+				</button>
+			</div>
+			<div id="contactForm">
+				<form action="#" method="post" id="formContact">
+					<img id="img_close_div_contact" class="img_close_div" src="img/close.png">
+					<center><h1>Contact Us</h1></center>
+					<div id="div_name">
+						<label for="txt_name" class="labelField">Name (required)</label>
+						<input type="text" name="txt_name" id="txt_name" class="txtForm" placeholder="Name" required><br/>
+					</div>
+					
+					<div id="div_email">
+						<label for="txt_email" class="labelField">Email (required)</label>
+						<input type="email" name="txt_email" id="txt_email" class="txtForm" placeholder="Email Address" required><br/>
+					</div>
+					
+					<div id="div_phone">
+						<label for="txt_phone" class="labelField">Phone</label>
+						<input type="text" name="txt_phone" id="txt_phone" placeholder="Phone Number" class="txtForm"><br/>
+					</div>
+				</form>
+				<div id="div_textarea">
+					<label for="txt_textArea" class="labelField">Message</label>
+					<textarea rows="9" cols="32" id="txt_textArea" name="txt_textArea" placeholder="Your Message" form="formContact" required></textarea><br/>
+				</div>
+					
+				<div id="div_newsletter">
+					<input type="checkbox" name="check_newsletter" id="check_newsletter"><label for="check_newsletter" id="label_checkNewsletter" class="labelField">Sign up to newsletter</label><br/>
+				</div>
+
+				<div id="div_privacy">
+					<input type="checkbox" name="check_privacy" id="check_privacy"><label for="check_privacy" id="label_checkPrivacy" class="labelField">Agree to privacy policy</label><br/>
+				</div>
+				
+				<div id="div_buttonSubmit">
+					<button id="btn_submitForm">SEND</button>
+				</div>
+			</div>
+			
+		</div>
+		<script src="js/alerts.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
