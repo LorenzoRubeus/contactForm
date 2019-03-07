@@ -14,5 +14,5 @@ function successAlert() {
 	}, 500);
 	setTimeout(function() {
 		location.reload();	
-	}, 2600);
+	}, 3000);
 }
