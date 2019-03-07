@@ -15,7 +15,11 @@ body {
 @media (min-width: 0px) and (max-width: 500px) {
 	
 	.slider {
-		display: none !important;
+		display: none;
+	}
+	
+	#img_logo {
+		top: 20px !important;
 	}
 	
 	#overlay {
@@ -74,6 +78,20 @@ body {
 	top: 0;
 	left: 0;
 	overflow: hidden;
+}
+
+#img_logo {
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	transform: translateX(-50%);
+	z-index: 1;
+	width: 360px;
+	height: 120px;
+}
+
+#img_logo_mobile {
+	display: none;
 }
 
 .slider {

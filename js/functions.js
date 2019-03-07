@@ -72,13 +72,17 @@ function checkEmail() {
 }
 
 function showContactForm() {
-	$("#div_btnContact").css("display", "none");
+	document.getElementById("img_logo").style.setProperty("display", "none", "important");
 	$("#contactForm").css("display", "block");
+	$("#div_btnContact").css("display", "none");
 	$("#contactForm").fadeTo(500, 1, function(){});
 }
 
 function closeContactForm() {
 	$("#contactForm").fadeTo(500, 0, function(){
+		if(window.innerHeight >= 355) {
+			$("#img_logo").css("display", "block");
+		}
 		$("#div_btnContact").css("display", "block");
 		$("#contactForm").css("display", "none");
 	});

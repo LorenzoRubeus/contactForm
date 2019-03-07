@@ -25,4 +25,13 @@ $("#formContact").on('submit', function(e) {
 	}
 });
 
+setInterval(function() {
+	if(window.innerHeight < 355) {
+		document.getElementById("img_logo").style.setProperty("display", "none", "important");
+	} else {
+		if(document.getElementById("contactForm").style.display == "none" && document.getElementById("img_logo").style.display == "none") {
+			document.getElementById("img_logo").style.setProperty("display", "block", "important");
+		}
+	}
+}, 100)
 
